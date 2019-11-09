@@ -27,9 +27,11 @@ function intervalFromRoot(index) {
 }
 
 const Fret = ({open, toneColour, pitch}) => {
-	const className = "fret tone-colour-"+toneColour+( open === true ? " string-pitch" : "")
-	const element = <td className={className}>{pitch}</td>
-	// const element = ( open === true ? <td className="string-pitch ">{pitch}</td> : <td className={"fret tone-colour-"+toneColour}>{pitch}</td>)
+	const openString = ( open === true ? " string-pitch" : "")
+	console.log(toneColour)
+	const className = "fret tone-colour-"+toneColour+openString
+	const label = ( toneColour === -1 ? "" : toneColour)
+	const element = <td className={className}>{ open === true ? pitch : label+1}</td>
 	return (
 		element
 	)
@@ -37,7 +39,7 @@ const Fret = ({open, toneColour, pitch}) => {
 
 const String_ = ({scaleNotes,pitch}) => {
 		const stringPitch = notes.indexOf(pitch)
-		const frets = []//[<Fret key={"".concat(stringPitch,0)} toneColour={scaleNotes.indexOf(stringPitch)} pitch={stringPitch} />]
+		const frets = []
 
 		for (let step = 0; step < 18; step++) {
 			const fretPitch = notes[intervalFromRoot(stringPitch+step)]
