@@ -11,3 +11,119 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#guitar {
+}
+
+#neck {
+	background-color: #3d350a;
+	border: 1px solid #222;
+}
+
+.fret {
+	width: 3rem;
+	height: 1rem;
+	color: #3d350a;
+	text-align: center;
+}
+
+.string-pitch {
+	background-color: #DAF;
+	width: 1rem;
+	color: #3d350a;
+}
+
+.tone-colour--1 {
+	background-color: #d6cea5;
+	color: transparent;
+}
+.tone-colour-0 {
+	/* Root note */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(214, 134, 235, 100%);
+	/*background-color: rgba(38, 215, 255, 100%);*/
+	border: 2px solid white;
+	/*background-color: red;*/
+}
+.tone-colour-1 {
+	/* 2nd */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(115, 232, 250, 70%);
+	border: 2px solid rgba(145, 250, 255, 100%);
+	/*background-color: orange;*/
+}
+.tone-colour-2 {
+	/* 3rd */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(38, 245, 255, 80%);
+	/*background-color: rgba(38, 225, 255, 80%);*/
+	/*background-color: yellow;*/
+	/*border: 2px solid rgba(217, 237, 90, 80%);*/
+	border: 2px solid rgba(145, 250, 255, 100%);
+
+}
+.tone-colour-3 {
+	/* 4th */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(115, 232, 250, 70%);
+	border: 2px solid rgba(145, 250, 255, 100%);
+	/*background-color: green;*/
+}
+.tone-colour-4 {
+	/* 5th */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(38, 235, 255, 80%);
+	/*border: 2px solid rgba(255, 255, 255, 70%);*/
+	border: 2px solid rgba(145, 250, 255, 100%);
+	/*background-color: skyblue;*/
+}
+.tone-colour-5 {
+	/* 6th */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(115, 232, 250, 70%);
+	border: 2px solid rgba(145, 250, 255, 100%);
+	/*background-color: brown;*/
+}
+.tone-colour-6 {
+	/* 7th */
+	/*color: transparent;*/
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: bold;
+	background-color: rgba(38, 225, 255, 80%);
+	/*background-color: blueviolet;*/
+	border: 2px solid rgba(14, 140, 109, 80%);
+}
+
+.key-picker {
+	height: 3rem;
+	width: 3.5rem;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #efefef;
+	text-align: center
+}
+.key-picker:hover {
+	background-color: #dfdfdf;
+}
+.key-picker.active {
+	background-color: rgb(217, 248, 255);
+}
+
+.string-pitch {
+	border: none;
+}
+.string-pitch.tone-colour--1 {
+	color: #3d350a;
+}
